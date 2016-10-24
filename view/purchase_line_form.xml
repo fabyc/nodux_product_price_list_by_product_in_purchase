@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<data>
+    <!--xpath expr="/form/notebook/page[@id='general']/field[@name='product']" position="after">
+        <button name="wizard_add_list_price" string="Actualizar Precios" icon="tryton-list-add"/>
+    </xpath-->
+
+    <xpath expr="/form/notebook/page[@id='general']/field[@name='delivery_date']" position="after">
+        <button name="update_price" string="Actualizar precio basado en costo compra"/>
+    </xpath>
+</data>

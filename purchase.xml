@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <record model="ir.ui.view" id="purchase_line_view_form">
+            <field name="model">purchase.line</field>
+            <field name="inherit" ref="purchase.purchase_line_view_form"/>
+            <field name="name">purchase_line_form</field>
+        </record>
+
+        <record model="ir.ui.view" id="purchase_view_form">
+            <field name="model">purchase.purchase</field>
+            <field name="inherit" ref="purchase.purchase_view_form"/>
+            <field name="name">purchase_form</field>
+        </record>
+
+        <record model="ir.action.wizard" id="wizard_add_list_price">
+            <field name="name">Actualizar Precios</field>
+            <field name="wiz_name">nodux_product_price_list_by_product_in_purchase.add_price_list</field>
+        </record>
+
+        <!--record model="ir.ui.view" id="add_term_view_form">
+            <field name="model">nodux_sale_payment_term.add_payment_term_form</field>
+            <field name="type">form</field>
+            <field name="name">add_term_form</field>
+        </record-->
+
+    </data>
+</tryton>
